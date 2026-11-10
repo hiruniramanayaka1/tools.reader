@@ -3,7 +3,9 @@ name: Tests
 permissions:
   contents: read
 
-on: [push]
+on:
+  workflow_dispatch:
+  "push":
 
 jobs:
   # Runtime Tests
